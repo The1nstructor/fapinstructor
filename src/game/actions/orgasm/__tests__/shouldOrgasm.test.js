@@ -1,4 +1,4 @@
-import { allowedOrgasm } from "./shouldOrgasm";
+import {allowedOrgasm} from "../orgasm";
 import store from "store";
 import moment from "moment";
 
