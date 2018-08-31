@@ -1,4 +1,6 @@
 import visibilityChange from "utils/visibility";
+import present from "present";
+
 /**
  * The game loop will automatically start when this file is imported
  */
@@ -7,7 +9,7 @@ let visible = true;
 visibilityChange(visibility => {
   visible = visibility;
   if (!visible) {
-    setTimeout(() => update(window.performance.now()), 0);
+    setTimeout(() => update(present()), 0);
   }
 });
 
@@ -26,10 +28,11 @@ const update = timestamp => {
   if (visible) {
     requestAnimationFrame(update);
   } else {
-    setTimeout(() => update(window.performance.now()), 0);
+    setTimeout(() => update(present()), 0);
   }
 };
-update(window.performance.now());
+console.error(present());
+update(present());
 
 const subscribe = callback => {
   // If the loop callback has an onSubscribe event call it.
