@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { allowedOrgasm } from "game/actions/orgasm/orgasm";
 import store from "store";
 import moment from "moment";
