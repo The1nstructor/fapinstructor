@@ -1,0 +1,1 @@
+Folder containing all female Instructor files. One folder for each Instructor, and one sub-directory for each Category.
