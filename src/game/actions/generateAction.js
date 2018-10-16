@@ -112,4 +112,4 @@ const generateAction = () => {
 /**
  * Create an ActionIterator using a action generator
  */
-export default new ActionIterator(generateAction);
+export default ActionIterator(generateAction);

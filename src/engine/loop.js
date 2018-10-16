@@ -1,4 +1,5 @@
 import visibilityChange from "utils/visibility";
+
 /**
  * The game loop will automatically start when this file is imported
  */
